@@ -1,0 +1,29 @@
+<!-- checkout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Checkout</h2>
+    <form onsubmit="checkout(event)">
+      <input type="text" placeholder="Full Name" required><br>
+      <input type="text" placeholder="Shipping Address" required><br>
+      <input type="text" placeholder="Phone Number" required><br>
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+
+  <script>
+    function checkout(e) {
+      e.preventDefault();
+      alert(\"Order Placed Successfully!\");
+      localStorage.removeItem('cart');
+      location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
