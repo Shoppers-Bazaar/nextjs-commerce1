@@ -1,0 +1,28 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <button onclick="location.href='checkout.html'">Proceed to Checkout</button>
+  </div>
+
+  <script>
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let html = '<ul>';
+    let total = 0;
+    cart.forEach(item => {
+      html += `<li>${item.name} - ₹${item.price}</li>`;
+      total += item.price;
+    });
+    html += `</ul><h3>Total: ₹${total}</h3>`;
+    document.getElementById('cart-items').innerHTML = html;
+  </script>
+</body>
+</html>
