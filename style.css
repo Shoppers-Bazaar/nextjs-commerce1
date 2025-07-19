@@ -70,3 +70,23 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
+
+.auth-form {
+  width: 300px;
+  margin: 100px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.auth-form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+.auth-form button {
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border: none;
+}
