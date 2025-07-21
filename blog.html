@@ -1,19 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech2etc Ecommerce Tutorial</title>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blog - YourBrandName</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
 
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
 
-    <body>
+        .blog-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
 
-        <script src="script.js"></script>
-    </body>
+        .blog-container h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .blog-post {
+            background: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .blog-post h2 {
+            font-size: 28px;
+            margin: 20px 0 10px;
+        }
+
+        .blog-post p {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .blog-post .date {
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="blog-container">
+        <h1>Our Latest Blog Posts</h1>
+
+        <div class="blog-post">
+            <img src="blog-image-1.jpg" alt="Blog Image">
+            <p class="date">Published on July 21, 2025</p>
+            <h2>Top 5 Trends in E-commerce You Should Know</h2>
+            <p>
+                E-commerce is evolving fast. In 2025, we are seeing trends like AI-powered shopping, same-day delivery, personalized product recommendations, and much more.
+                Read on to discover what your business should adopt to stay ahead of the curve.
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <img src="blog-image-2.jpg" alt="Blog Image">
+            <p class="date">Published on July 10, 2025</p>
+            <h2>How to Start a Dropshipping Store in India</h2>
+            <p>
+                Want to start your own business without holding inventory? Dropshipping might be the right model for you.
+                Here’s a step-by-step guide to launching your dropshipping store with minimal investment.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 
 </html>
