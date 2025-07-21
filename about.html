@@ -1,19 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech2etc Ecommerce Tutorial</title>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - YourBrandName</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
 
-        <link rel="stylesheet" href="style.css">
-    </head>
+        .about-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
 
-    <body>
+        .about-container h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
-        <script src="script.js"></script>
-    </body>
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .about-content img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        @media(min-width: 768px) {
+            .about-content {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            .about-content img {
+                margin-right: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="about-container">
+        <h1>About Us</h1>
+        <div class="about-content">
+            <img src="about-image.jpg" alt="About Us">
+            <p>
+                Welcome to <strong>YourBrandName</strong>! We are passionate about providing high-quality products and outstanding service to our customers. 
+                Founded in 2025, our mission is to make online shopping easy, affordable, and enjoyable. Our team works 
+                tirelessly to curate the best selection of products that suit your lifestyle. Thank you for choosing us!
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 
 </html>
